@@ -1,6 +1,6 @@
 # Test repo: greedy model order reduction
 
-This is the Johannes Tillil PhD model reduction repository.
+This is a model order reduction repository for testing.
 
 ## How to run
 
@@ -8,6 +8,7 @@ This is the Johannes Tillil PhD model reduction repository.
  - navigate to MAIN folder
  - start parallel pool with arbitrary number of workers
  - run("MAIN.m")
+ - 
 
 ## Included models
 
