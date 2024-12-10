@@ -35,6 +35,7 @@ I = model.I;
 % initiate first config
 exhaustive_mor.configs = repmat("dyn", 1, I.nstates);
 exhaustive_mor.configs(logical(model.state_unimportant)) = "pneg";
+exhaustive_mor.configs(logical(model.state_constant)) = "env";
 lastconfig = exhaustive_mor.configs(1, :);
 
 % initiate exhaustive_mor

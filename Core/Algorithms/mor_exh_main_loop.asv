@@ -27,13 +27,12 @@ X0empty = (model.X0 == 0);
 
 % unnecessary states
 state_unimportant = model.state_unimportant;
-state_constant = model.state_constant;
 
 %% main loop
 while true
     % handle next iteration
     iteration = iteration + 1; fprintf('\n     Iteration: %i', iteration);
-    [test_configs, statefromtoreduced] = generate_configs(lastconfig, I, classifs_to_consider, X0empty, state_unimportant, state_constant, criterion);
+    [test_configs, statefromtoreduced] = generate_configs(lastconfig, I, classifs_to_consider, X0empty, state_unimportant, criterion);
 
     % LOG: test_configs AND statefromtoreduced
     if log_required
@@ -177,7 +176,7 @@ end
 
 %%%% Helper functions %%%%
 
-function [configs, statefromtoreduced] = generate_configs(lastconfig, I, classifs_to_consider, X0empty, state_unimportant, state_constant, criterion)
+function [configs, statefromtoreduced] = generate_configs(lastconfig, I, classifs_to_consider, X0empty, state_unimportant, criterion)
 
 if length(classifs_to_consider) < 2
     error('Not enough possible state classifications provided - more than one needed.')
@@ -240,8 +239,6 @@ for stateID = 1:I.nstates
             statefromtoreduced{curr_config, 4} = 1;
             curr_config = curr_config + 1;
         end
-    elseif state_constant(stateID)
-        % ...
     elseif lastconfig(stateID) == "dyn"
         for newstateconfig = setdiff(classifs_to_consider, "dyn", 'stable')
             if newstateconfig == "env" && X0empty(stateID)
