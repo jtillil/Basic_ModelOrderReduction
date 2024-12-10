@@ -8,7 +8,7 @@ This is a model order reduction repository for testing.
  - navigate to MAIN folder
  - start parallel pool with arbitrary number of workers
  - run("MAIN.m")
- - 
+ - reduced models are saved in MAIN/results
 
 ## Included models
 
