@@ -46,7 +46,11 @@ multiple = model.multiple;
 I = model.I;
 L = model.L;
 odefun = model.odefun;
-jacfun = model.jacfun;
+if isfield(model, "jacfun")
+    jacfun = model.jacfun;
+else
+    jacfun = [];
+end
 
 % parfor nconfig = 1:Nconfigs
 %     [obj, objlog, ~, ~, errentry] = objfun(t_ref, X0, par, model, mat_vector_config(nconfig, :), timeout);

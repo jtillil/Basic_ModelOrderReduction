@@ -22,7 +22,7 @@ log_required = false;
 %% model selection
 % select model here
 
-modelname = 'modelBC';
+modelname = 'modelBCSnake';
 % modelname = 'modelEGFR';
 
 %% compatibility
@@ -45,6 +45,6 @@ mode = 'from_start';
 % "dyn" "cneg" "pneg" "env" "irenv_geom" "pss" 
 
 %% run
-classifs = ["dyn" "cneg" "pneg" "env" "irenv_geom" "pss"];
+classifs = ["dyn" "cneg" "pneg" "env" "irenv_geom"];
 
 morexh(modelname, mode, eout, eint, pint, timeout, crit, errtype, firstrun, pnegrun, conlawrun, classifs, variability, LHS_EOG, variability_input, virtual_pop, X_ref_var, backwards, redmodel, log_required)

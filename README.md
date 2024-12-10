@@ -1,51 +1,37 @@
-# Description
+# Test repo: greedy model order reduction
 
 This is the Johannes Tillil PhD model reduction repository.
 
-# Contents
+## How to run
 
-## ConversionScripts
+ - open Matlab
+ - navigate to MAIN folder
+ - start parallel pool with arbitrary number of workers
+ - run("MAIN.m")
 
- - ode to odejac
- - ode to stoichiometric matrix 
+## Folders
 
-## GeneticAlgorithms
+### Core
 
- - NSGA-II
+#### Algorithms
 
-## IndexAnalysis Jane
+Contains main scripts for the model reduction:
+ - morexh-repeated.m starts the reduction
+ - morexh-main-loop.m performs the main iterative greedy reduction procedure
+ - morexh-finish-intermediate.m finishes the reduction, creates the reduced model and saves it
 
-Original index analysis code by Jane Knöchel.
+#### ConversionScripts
 
-## IndexAnalysis Johannes
+Contains compatibility scripts.
 
-Adapted index anlysis code in working sub directory. Includes:
- - calculate ir-indices 
- - calculate state-classification-indices
- - classify states by state-classification indices
- - perform iterative ir-index-based reduction
+#### Core
 
-## Models
+Contains main helper scripts that run essential features (ode, jacobian, model simulation, objective function).
 
-Model repository:
- - EGFR
- - Reelin
- - Warfarin_full
- - Warfarin_reduced
+#### modelfiles
 
-Toy models:
- - ShortReactionChain
- - SimpleParallelPathways
- - SimpleReactionChain
+Contains model files which specify initial conditions, ode and jacobian.
 
-## ProfileLikelihood
+### MAIN
 
-Profile-likelihood-based model reduction.
-
-## Simulation
-
-Files for simple model simulation.
-
-## tQSSA
-
-Extension of index-based model reduction to include total quasi steady state approximation. Includes all relevant index analysis and simulation files.
+The main folder. Contains scripts that set parameters for the model reduction and start the algorithm. Execute MAIN.m to start the reduction.

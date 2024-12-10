@@ -31,7 +31,7 @@ DF = jacfun(X,par);
 %%% (3) post-processing for index analysis
 %%% check if there are NaN or Inf entries
 if any(isinf(DF),'all') || any(isnan(DF),'all')
-    error('\n There is an issue with the Jacobian (contains ''inf'' or ''NaN'' entries).')
+    error('There is an issue with the Jacobian (contains ''inf'' or ''NaN'' entries).')
 end
 
 %%% set jacobian of environmental & negligible states variables to zero
