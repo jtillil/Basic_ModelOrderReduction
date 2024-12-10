@@ -2,7 +2,7 @@
 clear; clc; close all;
 
 addpath(genpath('../Core'))
-addpath(genpath('./results'))
+addpath(genpath('../MAIN'))
 
 %% standard parameters
 eout = 0.1;             % 10% relative error bound on output
