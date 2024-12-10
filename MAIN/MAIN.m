@@ -22,8 +22,8 @@ log_required = false;
 %% model selection
 % select model here
 
-% modelname = 'modelBC';
-modelname = 'modelEGFR';
+modelname = 'modelBC';
+% modelname = 'modelEGFR';
 
 %% compatibility
 % ignore these
