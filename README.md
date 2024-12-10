@@ -12,13 +12,17 @@ This is the Johannes Tillil PhD model reduction repository.
 ## Included models
 
 Core/modelfiles/modelBCSnake-minimal.mat
- - Wajima 2009: Blood Coagulation, snake venom scenario
+ - Wajima 2009: Blood coagulation network, snake venom scenario
  - 63 states, 174 parameters
+ - input: Brown snake venom
+ - output: Fibrinogen
  - time to reduce with 20 parallel workers: 20 min
 
 Core/modelfiles/modelEGFR-minimal.mat
- - Hornberg 2005: EGFR signalling
+ - Hornberg 2005: Epidermial growth factor receptor signalling
  - 112 states, 296 parameters
+ - input: Epidermial groth factor
+ - output: Double-phosphorylized ERK
  - time to reduce with 20 parallel workers: 3.5 h
 
 ## Folders
