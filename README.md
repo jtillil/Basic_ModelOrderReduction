@@ -9,6 +9,18 @@ This is the Johannes Tillil PhD model reduction repository.
  - start parallel pool with arbitrary number of workers
  - run("MAIN.m")
 
+## Included models
+
+Core/modelfiles/modelBCSnake-minimal.mat
+ - Wajima 2009: Blood Coagulation, snake venom scenario
+ - 63 states, 174 parameters
+ - time to reduce with 20 parallel workers: 20 min
+
+Core/modelfiles/modelEGFR-minimal.mat
+ - Hornberg 2005: EGFR signalling
+ - 112 states, 296 parameters
+ - time to reduce with 20 parallel workers: 3.5 h
+
 ## Folders
 
 ### Core
