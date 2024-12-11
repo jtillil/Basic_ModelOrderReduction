@@ -39,7 +39,7 @@ X_ref_var = 0;
 mode = 'from_start';
 
 %%%% all possible reduction approaches
-% "dyn" "cneg" "pneg" "irenv_geom" "irenv_arith" "average" "mode" "constant" "constregr" "ssenv" "env" "pss" 
+% "dyn" "cneg" "pneg" "irenv_geom" "irenv_arith" "average" "mode" "ssenv" "env" "pss" 
 
 %%%% recommended reduction approaches (dyn should always be included)
 % "dyn" "cneg" "pneg" "env" "irenv_geom" "pss" 
