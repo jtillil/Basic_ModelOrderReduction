@@ -10,6 +10,21 @@ This is a model order reduction repository for testing.
  - run("MAIN.m")
  - reduced models are saved in MAIN/results
 
+## How to read results
+
+ - go to MAIN/results folder
+ - load either or:
+   - modelBCSnake-exh-t120-MRSE-0.1-0.5-linear-dyncnegpnegenvirenv-geom.mat
+   - modelEGFR-exh-t120-MRSE-0.1-0.5-linear-dyncnegpnegenvirenv-geompss.mat
+ - see redmodel for reduced model
+ - see redmodel.redobj for general metrics of the reduced model
+   - see redmodel.redobj.ndyn for number of ODEs remaining in the reduced model
+   - see redmodel.redobj.redconfig for reduction approaches applied to individual states to obtain reduced model
+   - see redmodel.redobj.error for relative L2 approximation errors of all states in the reduced model
+ - see redmodel.exhasutive-mor for
+ - use redmodel.t-ref, redmodel.X-ref to plot full model profiles
+ - use redmodel.t-red, redmodel.X-red to plot reduced model profiles
+
 ## Included models
 
 Core/modelfiles/modelBCSnake-minimal.mat
@@ -17,7 +32,7 @@ Core/modelfiles/modelBCSnake-minimal.mat
  - 63 states, 174 parameters
  - input: Brown snake venom
  - output: Fibrinogen
- - time to reduce with 20 parallel workers: 20 min
+ - time to reduce with 20 parallel workers: 8 min
 
 Core/modelfiles/modelEGFR-minimal.mat
  - Hornberg 2005: Epidermial growth factor receptor signalling
