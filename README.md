@@ -19,7 +19,7 @@ This is a model order reduction repository for testing.
  - see variable "redmodel" for reduced model
  - see "redmodel.redobj" for general metrics of the reduced model
    - see "redmodel.redobj.ndyn" for number of ODEs remaining in the reduced model
-   - see "redmodel.redobj.redconfig" for reduction approaches applied to individual states to obtain reduced model
+   - see "redmodel.redobj.redconfig" for reduction approaches applied to individual states that define the reduced model
    - see "redmodel.redobj.error" for relative L2 approximation errors of all states in the reduced model
  - see "redmodel.exhaustive-mor" for logs of the reduction procedure
    - see "redmodel.exhaustive-mor.elapsedtime" for total time taken for model order reduction
