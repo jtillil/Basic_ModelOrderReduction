@@ -16,12 +16,13 @@ This is a model order reduction repository for testing.
  - load either or:
    - modelBCSnake-exh-t120-MRSE-0.1-0.5-linear-dyncnegpnegenvirenv-geom.mat
    - modelEGFR-exh-t120-MRSE-0.1-0.5-linear-dyncnegpnegenvirenv-geompss.mat
- - see redmodel for reduced model
- - see redmodel.redobj for general metrics of the reduced model
-   - see redmodel.redobj.ndyn for number of ODEs remaining in the reduced model
-   - see redmodel.redobj.redconfig for reduction approaches applied to individual states to obtain reduced model
-   - see redmodel.redobj.error for relative L2 approximation errors of all states in the reduced model
- - see redmodel.exhasutive-mor for
+ - see variable "redmodel" for reduced model
+ - see "redmodel.redobj" for general metrics of the reduced model
+   - see "redmodel.redobj.ndyn" for number of ODEs remaining in the reduced model
+   - see "redmodel.redobj.redconfig" for reduction approaches applied to individual states to obtain reduced model
+   - see "redmodel.redobj.error" for relative L2 approximation errors of all states in the reduced model
+ - see "redmodel.exhaustive-mor" for logs of the reduction procedure
+   - see "redmodel.exhaustive-mor.elapsedtime" for total time taken for model order reduction
  - use redmodel.t-ref, redmodel.X-ref to plot full model profiles
  - use redmodel.t-red, redmodel.X-red to plot reduced model profiles
 
