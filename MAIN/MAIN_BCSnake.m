@@ -26,7 +26,7 @@ modelname = 'modelBCSnake';
 % modelname = 'modelEGFR';
 
 %% compatibility
-% ignore these
+% ignore these for now
 redmodel = 0;
 variability = 0;
 LHS_EOG = 0;

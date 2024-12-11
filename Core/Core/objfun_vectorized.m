@@ -1,22 +1,3 @@
-%%% Version: October 5th, 2023
-%%%
-%%% call by: vector_objvals  =  redmodel_objfun_vectorized(model,mat_vector_config)
-%%%
-%%% This function computes errors from any reduced model. Useful for higher
-%%% level algorithms. Vectorized function.
-%%%
-%%% Input:  model               struct specifying the model
-%%%         mat_vector_config   matrix of row vectors specifying reduced model configs
-%%%
-%%% Output: err                 struct containing output and internal errs
-%%%
-%%% Citation:
-%%% 
-%%% ---
-%%% 
-%%% Authors: Johannes Tillil
-%%%
-
 function [vector_objvals, log] = objfun_vectorized(model, mat_vector_config, statefromtoreduced, timeout, errtype, variability, virtual_pop, X_ref_var, log)
 
 % LOG

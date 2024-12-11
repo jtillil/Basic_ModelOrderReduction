@@ -7,7 +7,8 @@ This is a model order reduction repository for testing.
  - open Matlab
  - navigate to MAIN folder
  - start parallel pool with arbitrary number of workers
- - run("MAIN.m")
+ - run("MAIN_BCSnake.m") to reduce blood coagulation model (8min at 20 parallel workers)
+ - run("MAIN_EGFR.m") to reduce EGFR model (3.5h at 20 parallel workers)
  - reduced models are saved in MAIN/results
 
 ## How to read results

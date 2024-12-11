@@ -1,27 +1,3 @@
-%%% Version: January 24th, 2020
-%%%
-%%% call by: redmodel  =  model_order_reduction(model,seqofstates,relerrTOL)
-%%%
-%%% This function returns the classification of the state variables as
-%%% environmental, negligible, quasi steady state, mass conserved or
-%%% dynamical state variable
-%%%
-%%% Input:  model               structure specifying the model
-%%%         seqofstates         sequence, in which state variables are
-%%%                             tested for model order reduction
-%%%         relerrTOL           user defined relative error threshold
-%%%
-%%% Output: redmodel            structure specifying the reduced order model
-%%%
-%%% Citation:
-%%% 
-%%% Knoechel, Kloft and Huisinga, "Sensitivity based input-response index to 
-%%% analyse and reduce large-scale signalling networks"
-%%% PLOS Comp. Biology, 2020 (under review)
-%%% 
-%%% Authors: Johannes Tillil
-%%%
-
 function [redmodel, log] = mor_exh_repeated(model, mor_options_firstrun, mor_options)
 
 %% setup
