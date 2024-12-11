@@ -23,7 +23,7 @@ This is a model order reduction repository for testing.
    - see "redmodel.redobj.error" for relative L2 approximation errors of all states in the reduced model
  - see "redmodel.exhaustive-mor" for logs of the reduction procedure
    - see "redmodel.exhaustive-mor.elapsedtime" for total time taken for model order reduction
-   - see "redmodel.exhaustive-mor.finaliteration" for last iteration where error bouds were met
+   - see "redmodel.exhaustive-mor.finaliteration" for last iteration where error bounds were met
    - see "redmodel.exhaustive-mor.objvals" for log of objective funtion in every iteration:
      - column 1: number of remaining ODEs in the model
 	 - column 2: relative L2 approximation error of model output (state number "model.I.output")
